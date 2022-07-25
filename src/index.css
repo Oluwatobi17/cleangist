@@ -1,0 +1,10 @@
+.active{
+  color: #40189D;
+  background-color: white;
+}
+div.active{
+  color: #40189D;
+}
+.filter{
+  color: white;
+}

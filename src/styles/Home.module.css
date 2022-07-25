@@ -1,0 +1,233 @@
+.navcontainer{
+    background-color: #020381;
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navcontainer > img{
+    height: 30px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid white;
+    color: white;
+}
+.navcontainer > div{
+    display: flex;
+}
+.links > span{
+    font-size: 12px;
+}
+a.links{
+    text-decoration: none;
+}
+.active{
+    background-color: #800080;
+}
+.banner{
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    text-align: center;
+}
+.banner > div{
+    font-size: 1.8em;
+}
+.banner > div > span{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.banner p{
+    font-size: large;
+}
+.card{
+    padding: 10px;
+    background-color: #003366;
+    border-bottom: 20px solid white;
+}
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-right: 2px;
+    background-color: #800080;
+    color: #800080;
+}
+.title h1{
+    color: white;
+    display: inline;
+}
+.title > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.howcard{
+    width: 200px;
+    height: 180px;
+    padding: 40px 10px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+}
+.howcard .fa{
+    font-size: 2em;
+    border-radius: 3px;
+}
+.howcard > h5{
+    mask-border: 0px;
+    text-transform: capitalize;
+}
+.howcard > p{
+    font-size: 13px;
+    margin-top: 0px;
+}
+.joinLink{
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #020381;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    align-self: flex-end;
+    margin-right: 20px;
+    transition: 300ms;
+}
+.joinLink:hover{
+    opacity: 1;
+}
+.benefitcard{
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.benefitcard > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+    height: 30px;
+    width: 101%;
+    position: relative;
+    left: -20px;
+}
+.benefitcard > img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.benefitcard h5{
+    color: white;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.celebritycard{
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #29333d;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.celebritycard img{
+    border-radius: 20px;
+    width: 50%;
+    margin-top: 10px;
+}
+.celebritycard h5{
+    color: white;
+    margin-bottom: 2px;
+}
+.celebritycard span{
+    padding: 5px;
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+    background-color: #151a1f;
+}
+.feathuredcard{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feathuredcard img{
+    width: 60%;
+    border-radius: 50%;
+}
+.feathuredcard h5{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #003366;
+    font-weight: bold;
+}
+.feathuredcard a{
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    background-color: #5e6369;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .title > div{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navcontainer > img{
+        height: 25px;
+    }
+    .title > div{
+        justify-content: center;
+    }
+    .links{
+        padding: 2px;
+    }
+    .links > span{
+        font-size: 9px;
+    }
+    .banner > div > span{
+        font-size: 1.7em;
+    }
+    .joinLink{
+        align-self: center;
+        margin-right: 0;
+    }
+}

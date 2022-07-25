@@ -1,0 +1,205 @@
+:root{
+    --basicColor: #40189D;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    /* background-image: url('../assets/bg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    height: 50px;
+    padding: 10px;
+}
+.container{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1{
+    color: white;
+    text-align: center;
+    width: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.connect{
+    width: 45%;
+    background-color: var(--basicColor);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect > img{
+    width: 90%;
+}
+.content{
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.navs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+    border-radius: 40px;
+    background-color: var(--basicColor);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.navs > div{
+    padding: 13px 30px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.login{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.login > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+.login > div a{
+    color: #40189D;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.login > div > div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.login > div > div > label{
+    font-size: 13px;
+    margin-top: -8px;
+}
+.login input{
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.login input[type='text'], .login input[type='password']{
+    background-color: #ccc;
+    margin-right: 20px;
+}
+.login input[type='date']{
+    background-color: #ccc;
+    margin-right: 20px;
+    width: 100%;
+}
+.login input[type='submit']{
+    padding: 7px 25px;
+    color: white;
+    background-color: #40189D;
+    align-self: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+.login input[type='submit']:hover{
+    opacity: 0.9;
+}
+.base{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-width: 60%;
+}
+.base h2{
+    text-align: center;
+}
+.base > div > div{
+    display: flex;
+    align-items: center;
+}
+.base > div > div > img{
+    width: 25px;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.base > div > div > p{
+    min-width: 130px;
+    font-size: 13px;
+    border-bottom: 1px solid aqua;
+}
+.site{
+    color: #40189D;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px 20px;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    left: 75%;
+}
+.sociallogin{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.sociallogin > div{
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.sociallogin > div > img{
+    margin-right: 10px;
+    height: 30px;
+    color: #8c8cf8;
+}
+
+@media screen and (max-width: 700px) {
+    .container h1{
+        width: 90%;
+    }
+    .connect{
+        width: 80%;
+    }
+    .site{
+        left: 60%;
+        margin: auto;
+    }
+    .navs{
+        width: 80%;
+        font-size: 13px;
+    }
+    .navs > div{
+        padding: 5px 10px;
+    }
+    .login > div{
+        margin: 10px 0px;
+        align-items: auto;
+        justify-content: space-around;
+    }
+    .login > div > div{
+        display: inline-block;
+        margin-right: 0px;
+    }
+    .login input[type='text'], .login input[type='password']{
+        margin-right: 0;
+        width: 100%;
+    }
+}
