@@ -27,5 +27,12 @@ const FeathuredMembers = [
     {name: 'Sefinat Halidu', img: '/assets/celeb.webp', link: 'Connect'},
     {name: 'Tribe Temiade', img: '/assets/celeb.webp', link: 'Connect'},
 ]
+const Subcriptions = [
+    ['Join Community', 'Speak your Mind','Make Friends', 'No Rewards','No Recognition', 'No Support', 'Zero Cost'],
+    ['Join Community', 'Speak your Mind','Make Friends', 'Earn Points','Get Celebrated', 'Flat Rate', 'One-on-one Support'],
+    ['Join Community', 'Speak your Mind','Make Friends', 'Earn Valuable Points','Get Celebrated', '10% Off', 'One-on-one Support'],
+    ['Join Community', 'Speak your Mind','Make Friends', 'Earn Valuable Points','Get Celebrated', '20% Off', 'One-on-one Support'],
+    ['Join Community', 'Speak your Mind','Make Friends', 'Earn Valuable Points','Get Celebrated', '30% Off', 'One-on-one Support']
+]
 
-export { HowItWorks, UserBenefits, Celebrities,FeathuredMembers };
+export { HowItWorks, UserBenefits, Celebrities, FeathuredMembers, Subcriptions };

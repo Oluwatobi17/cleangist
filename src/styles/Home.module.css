@@ -166,6 +166,43 @@ a.links{
     border-radius: 8px;
     font-size: 10px;
 }
+.membercard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.membercard > div{
+    position: relative;
+    width: 220px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    background-position: top;
+    text-align: center;
+    margin: 10px;
+}
+.membercard > div > h2{
+    color: #003366;
+    margin: 5px;
+}
+.membercard > div > img{
+    position: relative;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #003366;
+    margin-right: 0px;
+}
+.membercard > div > p{
+    font-size: 12px;
+}
+.membercard .orgdoing{
+    padding: 5px 10px;
+    right: 5px;
+    top: 32%;
+    color: white;
+    background-color: #003366;
+    border-radius: 8px;
+    font-size: 10px;
+}
 .benefitcard{
     width: 150px;
     height: 220px;
@@ -253,6 +290,57 @@ a.links{
     background-color: #5e6369;
     padding: 3px 5px;
     text-decoration: none;
+}
+.subcriptioncard{
+    background-color: white;
+    padding: 1px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.subcriptioncard > div{
+    width: 180px;
+    margin: 20px 8px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 400ms;
+}
+.subcriptioncard > div:hover{
+    transform: scale(1.1);
+}
+.subcriptioncard > div > div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+.subcriptioncard > div > div h3{
+    font-size: 15px;
+}
+.subcriptioncard > div > div h3, p{
+    margin: 3px;
+    font-size: 12px;
+}
+.subcriptioncard > div > div h3{
+    font-size: 15px;
+}
+.subcriptioncard > div > div .orgdoing{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding: 10px 7px 5px 7px;
+    font-size: 10px;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.subcriptioncard > div > ul > li{
+    font-size: 12px;
 }
 .community{
     display: flex;
@@ -374,8 +462,45 @@ a.links{
 .side2 > img{
     width: 100%;
 }
+.mapcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+}
+.mapcard h2{
+    color: #002635;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px;
+}
+.mapcard a{
+    color: white;
+    font-weight: bold;
+    background-color: #002635;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    transition: 300ms;
+    margin-bottom: 10px;
+}
+.mapcard a:hover{
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.mapcard a i{
+    margin-right: 8px;
+}
 
 
+@media screen and (max-width: 1014px) {
+    .title > div{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 700px) {
     .title > div{
         justify-content: center;
@@ -388,6 +513,9 @@ a.links{
     }
     .cardflex, .cardflex2{
         padding: 20px;
+    }
+    .title > div{
+        justify-content: center;
     }
 }
 
