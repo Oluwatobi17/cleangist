@@ -53,6 +53,19 @@ a.links{
     background-color: #003366;
     border-bottom: 20px solid white;
 }
+.cardflex, .cardflex2{
+    padding: 20px 120px;
+    background-color: #002635;
+    border-bottom: 20px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardflex2{
+    padding: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .title{
     text-align: center;
     display: flex;
@@ -112,6 +125,46 @@ a.links{
 }
 .joinLink:hover{
     opacity: 1;
+}
+.orgcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: white;
+}
+.white{
+    color: white;
+}
+.orgcard > div{
+    position: relative;
+    width: 250px;
+    border-radius: 20px;
+    border: 5px solid white;
+    padding: 30px 10px;
+    background-position: top;
+    text-align: center;
+    margin: 10px;
+}
+.orgcard > div > img{
+    position: relative;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-right: 0px;
+}
+.orgcard > div > p{
+    font-size: 12px;
+}
+.orgcard .orgdoing{
+    padding: 5px 10px;
+    position: absolute;
+    right: 5px;
+    top: 32%;
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    font-size: 10px;
 }
 .benefitcard{
     width: 150px;
@@ -201,12 +254,140 @@ a.links{
     padding: 3px 5px;
     text-decoration: none;
 }
-
+.community{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    border-bottom: 10px solid white;
+}
+.community > img{
+    width: 50%;
+}
+.community .similar{
+    width: 45%;
+    background-position: center;
+    background-size: contain;
+    padding: 50px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.similar h1 span{
+    color: #800080;
+}
+.similar a{
+    color: white;
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.title .subtitle{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.title i{
+    color:darkgoldenrod;
+    font-size: 40px;
+}
+.groupcard{
+    border-radius: 4px;
+    width: 320px;
+    height: 118px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+}
+.groupcard > img{
+    width: 40%;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.groupcard > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.groupcard > div > h3{
+    color: #003366;
+    margin-bottom: 5px;
+}
+.groupcard > div > span{
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.groupcard > div > span > i{
+    color: white;
+    font-size: 13px;
+    background-color: #ccc;
+    padding: 1px 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.groupcard > div > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: bold;
+}
+.groupcard > div > div > div > a{
+    color: #003366;
+    text-decoration: none;
+}
+.groupcard > div > div > img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.groupcard > div > div {
+    display: flex;
+    align-items: center;
+}
+.cardflex > img{
+    width: 50%;
+}
+.cardflex2 > img{
+    width: 50%;
+}
+.side2{
+    width: 50%;
+}
+.side2 h1{
+    color: white;
+}
+.side2 > img{
+    width: 100%;
+}
 
 
 @media screen and (max-width: 700px) {
     .title > div{
         justify-content: center;
+    }
+    .community .similar{
+        width: 100%;
+    }
+    .community > img{
+        width: 100%;
+    }
+    .cardflex, .cardflex2{
+        padding: 20px;
     }
 }
 
@@ -230,4 +411,38 @@ a.links{
         align-self: center;
         margin-right: 0;
     }
+    .howcard{
+        width: 300px;
+        height: 200px;
+    }
+    .benefitcard{
+        width: 300px;
+        height: 360px;
+    }
+    .celebritycard{
+        width: 300px;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .feathuredcard{
+        width: 300px;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .cardflex > img{
+        width: 100%;
+    }
+    .cardflex2 > img{
+        width: 100%;
+    }
+    .side2{
+        width: 100%;
+    }
+    .side2 h1{
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    
 }
