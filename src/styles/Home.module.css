@@ -87,6 +87,7 @@ a.links{
 .title > div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .howcard{
     width: 200px;
